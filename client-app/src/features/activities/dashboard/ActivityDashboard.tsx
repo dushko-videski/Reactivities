@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { observer } from 'mobx-react-lite';
 import { Grid } from 'semantic-ui-react'
 import { useStore } from '../../../app/stores/store';
+import ActivityFilters from '../dashboard/ActivityFilters'
 
 import ActivityList from './ActivityList';
 import LoadingComponent from '../../../app/layout/LoadingComponent';
@@ -24,7 +25,7 @@ export default observer(function ActivityDashboard() {
             </Grid.Column>
 
             <Grid.Column width='6'>
-              <h2>Activities filter</h2>
+              <ActivityFilters />
             </Grid.Column>
         </Grid>
     )
